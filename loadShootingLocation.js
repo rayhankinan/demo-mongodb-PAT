@@ -9,4 +9,4 @@ db.shootingLocations.insertMany([
     {"name": "Trafalgar Square", "location": {"type": "Point", "coordinates": [-0.127695, 51.507797]}, "films": ["Harry Potter and the Prisoner of Azkaban"]},
 ]);
 
-db.collection.createIndex({ location: "2dsphere" });
+db.shootingLocations.createIndex({ location: "2dsphere" });

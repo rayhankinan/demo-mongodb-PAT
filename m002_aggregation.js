@@ -1,3 +1,4 @@
+// Find all average ratings for each reviewer, sort by highest to lowest
 db.reviews.aggregate([
     // Stage 1: Group remaining reviews by name and average the rating
     {
