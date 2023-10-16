@@ -1,12 +1,8 @@
-db.moviesDetails.find({mpaaRating: {$exists: true}})
+// Find all movies that have defined genres (null or value).
+db.movieDetails.find({ rated: { $exists: true } });
 
-db.moviesDetails.find({mpaaRating: {$exists: false}})
+// Find all movies that have undefined genres.
+db.movieDetails.find({ rated: { $exists: false } });
 
-db.movieDetails.find({mpaaRating: null})
-
-db.movieDetails.find({})
-
-db.movies.find({viewerRating: {$type: "int"}}).pretty()
-
-db.movies.find({viewerRating: {$type: "double"}}).pretty()
-
+// Find all movies that have defined genres and are null.
+db.movieDetails.find({ rated: null });
