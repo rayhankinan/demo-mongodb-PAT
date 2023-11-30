@@ -23,5 +23,4 @@ db.reviews.insertMany([
     {"reviewer_id":759723314,"rating":4.5,"reviewer":"Emile T","text":"The Martian could have been a sad drama film, instead it was a hilarious film with a little bit of drama added to it. The Martian is what everybody wants from a space adventure. Ridley Scott can still make great movies and this is one of his best."},
 ]);
 
-
 db.reviews.createIndex({ reviewer: "text", text: "text" });
